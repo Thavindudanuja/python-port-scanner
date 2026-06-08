@@ -1,7 +1,9 @@
 import socket
 
 target = input("Enter target IP address : ")
-print(f"\nScanning {target}...\n")
+print("=" * 40)
+print(f"Scanning Target : {target}")
+print("=" * 40)
 
 for port in range (1, 1025):
   s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
